@@ -37,7 +37,7 @@ processor = AutoProcessor.from_pretrained(checkpoint)
 
 
 
-url = "https://unsplash.com/photos/xBRQfR2bqNI/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjc4Mzg4ODEx&force=true&w=640"
+url = ""
 
 image = Image.open(requests.get(url, stream=True).raw)
 
@@ -75,7 +75,7 @@ model = AutoModelForZeroShotObjectDetection.from_pretrained(checkpoint)
 
 processor = AutoProcessor.from_pretrained(checkpoint)
 
-url = "https://unsplash.com/photos/oj0zeY2Ltk4/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTR8fHBpY25pY3xlbnwwfHx8fDE2Nzc0OTE1NDk&force=true&w=640"
+url = ""
 
 im = Image.open(requests.get(url, stream=True).raw)
 
